@@ -1,0 +1,30 @@
+{
+  "name": "project_01",
+  "version": "1.0.1",
+  "main": "node_modules/expo/AppEntry.js",
+  "homepage": "https://github.com/tomioke/reactnative_1.git",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@expo/webpack-config": "^0.17.0",
+    "expo": "~46.0.13",
+    "expo-status-bar": "~1.4.0",
+    "gh-pages": "^4.0.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-web": "~0.18.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "np": "^7.6.2",
+    "react-native-version": "^4.0.0"
+  },
+  "private": true
+}
