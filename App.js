@@ -63,7 +63,8 @@ class App extends Component {
           onPress={() => console.log("Hello")}
         >
           <Image
-            source={{uri: "https://images.unsplash.com/photo-1664369210144-90e51ddbbc30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+            source={{
+              uri: "https://images.unsplash.com/photo-1664369210144-90e51ddbbc30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
             }}
             style={tampilan.gambar}
           />
@@ -92,16 +93,16 @@ class App extends Component {
           />
         </TouchableOpacity>
         <View style={tampilan.switch}>
-          <Switch
+          <Switch>
             value={this.state.value}
             onValueChange={() => this.setState({ value: !this.state.value })}
-          />
+          </Switch>
         </View>
-        <TextInput
+        <TextInput>
           value={this.state.username}
           style={tampilan.inputtext}
           onChangeText={(value) => this.setState({ username: value })}
-        />
+        </TextInput>
 
         <TouchableOpacity style={tampilan.button}>
           <Text>Boleh diklik</Text>
@@ -168,11 +169,4 @@ const tampilan = StyleSheet.create({
   },
 });
 export default App;
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// });
+
