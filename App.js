@@ -93,16 +93,16 @@ class App extends Component {
           />
         </TouchableOpacity>
         <View style={tampilan.switch}>
-          <Switch>
+          <Switch
             value={this.state.value}
             onValueChange={() => this.setState({ value: !this.state.value })}
-          </Switch>
+          />
         </View>
-        <TextInput>
+        <TextInput
           value={this.state.username}
           style={tampilan.inputtext}
           onChangeText={(value) => this.setState({ username: value })}
-        </TextInput>
+        />
 
         <TouchableOpacity style={tampilan.button}>
           <Text>Boleh diklik</Text>
